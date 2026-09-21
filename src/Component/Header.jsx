@@ -12,15 +12,12 @@ const Header = () => {
 
   return (
     <>
-      {/* ================= BACKGROUND IMAGE ================= */}
       <div className="hidden lg:inline-block absolute top-0 left-0 -z-10 pointer-events-none">
         <img src={bgImg} alt="" className="w-full h-auto" />
       </div>
 
-      {/* ================= HEADER ================= */}
-      <header className="border-b-[1px] border-gray-100 w-full px-4 sm:px-8 py-1 flex justify-between items-center gap-4 sticky top-0 z-50 bg-white shadow-sm lg:shadow-none">
-        <div className="w-full max-w-7xl mx-auto px-4 sm:px-8 py-4 flex justify-between items-center gap-4">
-          {/* ================= LOGO ================= */}
+      <header className="border-b-[1px] border-gray-100 w-full px-2 sm:px-1 py-1 flex justify-between items-center gap-4 sticky top-0 z-50 bg-white shadow-sm lg:shadow-none">
+        <div className="w-full max-w-7xl mx-auto  sm:px-1 py-4 flex justify-between items-center gap-4">
           <div>
             <img
               src={logo}
@@ -29,13 +26,7 @@ const Header = () => {
             />
           </div>
 
-          {/* ================================================= */}
-          {/* DESKTOP NAVIGATION */}
-          {/* ================================================= */}
-
           <nav className="hidden lg:flex gap-8 text-gray-600 font-medium text-base items-center">
-            {/* ================= DEMOS ================= */}
-
             <div className="relative group">
               <button className="hover:text-[#09B850] transition-colors">
                 Demos
@@ -84,8 +75,6 @@ const Header = () => {
                 </div>
               </div>
             </div>
-
-            {/* ================= PAGES ================= */}
 
             <div className="relative group">
               <button className="hover:text-[#09B850] transition-colors">
@@ -143,8 +132,6 @@ const Header = () => {
               </div>
             </div>
 
-            {/* ================= PORTFOLIO ================= */}
-
             <div className="relative group">
               <button className="hover:text-[#09B850] transition-colors">
                 Portfolio
@@ -193,8 +180,6 @@ const Header = () => {
                 </div>
               </div>
             </div>
-
-            {/* ================= MEGAMENU ================= */}
 
             <div className="relative group">
               <button className="hover:text-[#09B850] transition-colors">
@@ -268,8 +253,6 @@ const Header = () => {
               </div>
             </div>
 
-            {/* ================= CONTACT ================= */}
-
             <NavLink
               className="hover:text-[#09B850] transition-colors"
               to="/contact"
@@ -278,21 +261,13 @@ const Header = () => {
             </NavLink>
           </nav>
 
-          {/* ================================================= */}
-          {/* DESKTOP BUTTONS */}
-          {/* ================================================= */}
-
           <div className="hidden lg:flex gap-3 items-center">
-            {/* ================= THEME BUTTON ================= */}
-
             <button
               aria-label="Toggle theme"
               className="text-xl text-gray-700 hover:text-[#09B850] p-2 transition-colors"
             >
               <i className="fa-solid fa-sun"></i>
             </button>
-
-            {/* ================= SIGN UP ================= */}
 
             <div className="relative group">
               <button
@@ -310,8 +285,6 @@ const Header = () => {
               >
                 Sign Up
               </button>
-
-              {/* Dropdown */}
 
               <div
                 className="
@@ -348,8 +321,6 @@ const Header = () => {
               </div>
             </div>
 
-            {/* ================= BUY NOW ================= */}
-
             <div className="relative group">
               <button
                 className="
@@ -366,8 +337,6 @@ const Header = () => {
               >
                 Buy Now
               </button>
-
-              {/* Dropdown */}
 
               <div
                 className="
@@ -439,10 +408,6 @@ const Header = () => {
             </div>
           </div>
 
-          {/* ================================================= */}
-          {/* MOBILE HAMBURGER + THEME */}
-          {/* ================================================= */}
-
           <div className="flex lg:hidden items-center gap-3">
             {/* Theme */}
 
@@ -466,10 +431,6 @@ const Header = () => {
             </button>
           </div>
 
-          {/* ================================================= */}
-          {/* MOBILE MENU */}
-          {/* ================================================= */}
-
           {isMenuOpen && (
             <div
               className="
@@ -489,8 +450,6 @@ const Header = () => {
                 z-50
               "
             >
-              {/* Mobile Navigation */}
-
               <nav className="flex flex-col gap-4 text-gray-700 font-medium">
                 <NavLink
                   onClick={() => setIsMenuOpen(false)}
@@ -532,8 +491,6 @@ const Header = () => {
                   Contact Us
                 </NavLink>
               </nav>
-
-              {/* Mobile Buttons */}
 
               <div className="flex flex-col gap-3 pt-4 border-t border-gray-100">
                 <button className="w-full bg-gray-100 hover:bg-gray-200 py-2.5 text-black rounded-md font-medium text-sm transition-colors">
