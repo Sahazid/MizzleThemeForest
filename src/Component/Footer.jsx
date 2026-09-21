@@ -7,11 +7,11 @@ const Footer = () => {
   };
 
   return (
-    <footer className="w-full bg-[#1A1C1E] text-white pt-12 pb-8 relative">
-      {/* Top Floating Green Newsletter Banner */}
-      <div className="max-w-[75rem] mx-auto px-4 sm:px-6 lg:px-8 mb-16">
+    <footer className="w-full bg-[#1A1C1E] text-white pt-12 pb-8 relative mt-75 md:mt-60 ">
+      {/* Floating Banner */}
+      <div className="px-4 sm:px-6 lg:px-8 mb-16 absolute flex items-center justify-center -top-80 left-0 md:left-20 md:-top-65 lg:left-100 lg:-top-50">
         <div className="bg-[#00C05B] rounded-2xl p-8 lg:p-12 flex flex-col lg:flex-row lg:items-center justify-between gap-8 relative overflow-hidden shadow-xl">
-          {/* Left Title & Input Form */}
+          {/* Input Form */}
           <div className="space-y-6 max-w-xl z-10">
             <h2 className="text-3xl sm:text-4xl font-extrabold text-white leading-tight">
               Let's talk about your digital <br className="hidden sm:inline" />{" "}
@@ -35,7 +35,7 @@ const Footer = () => {
             </form>
           </div>
 
-          {/* Right Contact Info Details */}
+          {/* Info Details */}
           <div className="text-white space-y-3 text-sm sm:text-base font-medium z-10 lg:text-right">
             <div className="flex items-center lg:justify-end gap-2.5">
               <i className="fa-solid fa-headset text-lg"></i>
@@ -53,10 +53,10 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Main Footer Links Container */}
-      <div className="max-w-[75rem] mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Main Footer Container */}
+      <div className="max-w-[75rem] mx-auto px-4 sm:px-6 lg:px-8 pt-20">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-8 pb-12">
-          {/* Column 1: Logo & Tagline */}
+          {/* Column 1: Logo  */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
               <img src={lightLogo} alt="Mizzle" className="h-8 w-auto" />
@@ -67,7 +67,7 @@ const Footer = () => {
             </p>
           </div>
 
-          {/* Column 2: Quick Links */}
+          {/* Column 2: Links */}
           <div className="space-y-4">
             <h3 className="text-lg font-bold text-white">Quick links</h3>
             <ul className="space-y-2.5 text-sm text-gray-400">
@@ -243,13 +243,16 @@ const Footer = () => {
         </div>
 
         {/* Bottom Border Line */}
-        <div className="border-t border-gray-800"></div>
+        <div className="border-t border-gray-800 text-center">
+          {" "}
+          2026 &copy; All Reserve to Mizzle
+        </div>
       </div>
 
-      {/* Floating Scroll to Top Button */}
+      {/* UP Arrow*/}
       <button
         onClick={scrollToTop}
-        className="fixed bottom-6 right-6 bg-[#00C05B] hover:bg-[#00a34d] text-white w-10 h-10 rounded-lg flex items-center justify-center shadow-lg transition-all duration-300 z-50"
+        className="fixed cursor-pointer bottom-6 right-6 bg-[#00C05B] hover:bg-[#00a34d] text-white w-10 h-10 rounded-lg flex items-center justify-center shadow-lg transition-all duration-300 z-50"
         aria-label="Scroll to top"
       >
         <i className="fa-solid fa-arrow-up"></i>
