@@ -101,7 +101,8 @@ const Header = () => {
                   top-full
                   pt-3
                   w-48
-                  
+                  invisible
+                  opacity-0
                   translate-y-2
                   group-hover:visible
                   group-hover:opacity-100
