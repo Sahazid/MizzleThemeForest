@@ -7,3 +7,55 @@ body {
   font-style: normal;
   background-color: #FFFFFF;
 }
+
+.my-dropdown {
+  position: relative;
+}
+.my-dropdown:hover{
+  color: #09B850;
+}
+.my-dropdown-control {
+  border: none !important;
+  padding: 30px !important;
+  background: transparent !important;
+  color: #4b5563 !important;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+.my-dropdown-control:hover {
+  color: #09B850 !important;
+}
+
+
+.my-dropdown-menu {
+  position: absolute !important;
+  top: 100%;
+  left: 0;
+  min-width: 180px;
+  margin-top: 10px;
+
+  background: white !important;
+  border: 1px solid #eeeeee !important;
+  border-radius: 8px !important;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+
+  padding: 8px 0 !important;
+}
+
+
+.my-dropdown .Dropdown-option {
+  padding: 10px 16px !important;
+  color: #4b5563 !important;
+  font-size: 14px;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.my-dropdown .Dropdown-option:hover {
+  background: #f0fdf4 !important;
+  color: #09B850 !important;
+}
