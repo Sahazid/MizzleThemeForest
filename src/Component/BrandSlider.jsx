@@ -29,7 +29,7 @@ const logos = [
 
 const BrandSlider = () => {
   return (
-    <div className="w-full py-10 text-gray-900 font-bold bg-white mt-20 mb-20">
+    <div className="w-full py-10 text-gray-900 font-bold bg-white mt-20">
       <div className="max-w-[80rem] mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-8">
         <div className="shrink-0 text-center md:text-left">
           <h3 className="text-2xl font-bold leading-tight">
